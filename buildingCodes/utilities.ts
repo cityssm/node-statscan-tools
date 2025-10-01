@@ -17,7 +17,7 @@ export function findBuildingCode(
     if (
       data.codeName.toLowerCase() === searchString ||
       data.examples
-        .map((example) => example.toLowerCase())
+        .map((example: string) => example.toLowerCase())
         .includes(searchString)
     ) {
       results.push({ ...data, code })
@@ -25,4 +25,15 @@ export function findBuildingCode(
   }
 
   return results
+}
+
+/**
+ * Check if a string is a valid building code.
+ * @param code The building code to check.
+ * @returns True if the code is valid, false otherwise.
+ */
+export function isBuildingCode(
+  code: string
+): code is keyof typeof buildingCodes {
+  return code in buildingCodes
 }

@@ -11,3 +11,17 @@ await describe('statscan-tools/workCodes/lookups', async () => {
     }
   })
 })
+
+await describe('statscan-tools/workCodes/utilities', async () => {
+  await it('should validate correct work codes', () => {
+    if (!workCodes.isWorkCode('01')) {
+      throw new Error('Expected 01 to be a valid work code')
+    }
+  })
+
+  await it('should invalidate incorrect work codes', () => {
+    if (workCodes.isWorkCode('99')) {
+      throw new Error('Expected 99 to be an invalid work code')
+    }
+  })
+})

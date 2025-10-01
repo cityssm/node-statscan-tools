@@ -28,4 +28,14 @@ await describe('statscan-tools/buildingCodes/utilities', async () => {
             throw new Error('Expected no results, but got some');
         }
     });
+    await it('should validate correct building codes', () => {
+        if (!buildingCodes.isBuildingCode('110')) {
+            throw new Error('Expected 110 to be a valid building code');
+        }
+    });
+    await it('should invalidate incorrect building codes', () => {
+        if (buildingCodes.isBuildingCode('999')) {
+            throw new Error('Expected 999 to be an invalid building code');
+        }
+    });
 });

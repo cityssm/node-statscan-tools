@@ -12,3 +12,6 @@ export function findBuildingCode(codeNameOrExample) {
     }
     return results;
 }
+export function isBuildingCode(code) {
+    return code in buildingCodes;
+}

@@ -38,7 +38,7 @@ export const residentialBuildingCodes: Record<string, BuildingCode> = {
     examples: ['garden home', 'town house', 'carriage home', 'quadrex']
   },
   '335': { codeName: 'Row House - Condominium', examples: [] }
-}
+} as const
 
 /**
  * Non-residential Building Codes
@@ -278,7 +278,7 @@ export const nonResidentialBuildingCodes: Record<string, BuildingCode> = {
     codeName: 'Religious building',
     examples: ['church', 'cathedral', 'temple', 'citadel', 'synagogue']
   }
-}
+} as const
 
 /**
  * Residential and Non-residential Building Codes
@@ -287,4 +287,4 @@ export const nonResidentialBuildingCodes: Record<string, BuildingCode> = {
 export const buildingCodes = {
   ...residentialBuildingCodes,
   ...nonResidentialBuildingCodes
-}
+} as const

@@ -2,5 +2,5 @@ import type { BuildingCode } from './types.js';
 export declare const residentialBuildingCodes: Record<string, BuildingCode>;
 export declare const nonResidentialBuildingCodes: Record<string, BuildingCode>;
 export declare const buildingCodes: {
-    [x: string]: BuildingCode;
+    readonly [x: string]: BuildingCode;
 };

@@ -1,0 +1,12 @@
+.github/
+coverage/
+test/
+
+.deepsource.toml
+.gitignore
+.markdownlint.json
+.prettierignore
+
+eslint.config.*
+prettier.config.*
+tsconfig.json

@@ -1,0 +1,34 @@
+{
+  "name": "@cityssm/statscan-tools",
+  "version": "0.1.0",
+  "description": "Lookups and utilities for working with Statistics Canada (StatsCan) data.",
+  "keywords": [
+    "statscan",
+    "statistics-canada",
+    "canada"
+  ],
+  "homepage": "https://github.com/cityssm/node-statscan-tools#readme",
+  "bugs": {
+    "url": "https://github.com/cityssm/node-statscan-tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/node-statscan-tools.git"
+  },
+  "license": "MIT",
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./buildingCodes": "./buildingCodes/index.js",
+    "./workCodes": "./workCodes/index.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.1",
+    "eslint-config-cityssm": "^30.0.0",
+    "prettier-config-cityssm": "^1.0.0"
+  }
+}

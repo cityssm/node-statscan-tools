@@ -4,7 +4,7 @@ import type { BuildingCode } from './types.js'
  * Residential Building Codes
  * @see https://www.statcan.gc.ca/en/statistical-programs/document/2802_D2_V2
  */
-export const residentialBuildingCodes: Record<string, BuildingCode> = {
+export const residentialBuildingCodes = {
   '110': {
     codeName: 'Single House',
     examples: [
@@ -38,13 +38,13 @@ export const residentialBuildingCodes: Record<string, BuildingCode> = {
     examples: ['garden home', 'town house', 'carriage home', 'quadrex']
   },
   '335': { codeName: 'Row House - Condominium', examples: [] }
-} as const
+} satisfies Record<string, BuildingCode>
 
 /**
  * Non-residential Building Codes
  * @see https://www.statcan.gc.ca/en/statistical-programs/document/2802_D2_V2
  */
-export const nonResidentialBuildingCodes: Record<string, BuildingCode> = {
+export const nonResidentialBuildingCodes = {
   '410': {
     codeName: 'Primary industry building',
     examples: [
@@ -278,7 +278,7 @@ export const nonResidentialBuildingCodes: Record<string, BuildingCode> = {
     codeName: 'Religious building',
     examples: ['church', 'cathedral', 'temple', 'citadel', 'synagogue']
   }
-} as const
+} satisfies Record<string, BuildingCode>
 
 /**
  * Residential and Non-residential Building Codes
@@ -287,4 +287,4 @@ export const nonResidentialBuildingCodes: Record<string, BuildingCode> = {
 export const buildingCodes = {
   ...residentialBuildingCodes,
   ...nonResidentialBuildingCodes
-} as const
+} satisfies Record<string, BuildingCode>

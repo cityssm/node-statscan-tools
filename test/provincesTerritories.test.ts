@@ -1,3 +1,5 @@
+/* eslint-disable security/detect-object-injection */
+
 import { describe, it } from 'node:test'
 
 import * as provincesTerritories from '../provincesTerritories/index.js'

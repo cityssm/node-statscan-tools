@@ -3,7 +3,7 @@ import * as buildingCodes from '../buildingCodes/index.js';
 await describe('statscan-tools/buildingCodes/lookups', async () => {
     await it('should have three-digit building codes', () => {
         for (const code in buildingCodes.buildingCodes) {
-            if (!/^\d{3}$/.test(code)) {
+            if (!/^\d{3}$/v.test(code)) {
                 throw new Error(`Building code ${code} is not three digits`);
             }
         }

@@ -6,6 +6,7 @@ Current lookups:
 
 - Building permit building codes.
 - Building permit work codes.
+- Provinces and territories.
 
 ## Installation
 

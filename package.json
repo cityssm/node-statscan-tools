@@ -17,18 +17,30 @@
   },
   "license": "MIT",
   "author": "The Corporation of the City of Sault Ste. Marie",
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": "./index.js",
     "./buildingCodes": "./buildingCodes/index.js",
+    "./provincesTerritories": "./provincesTerritories/index.js",
     "./workCodes": "./workCodes/index.js"
   },
+  "files": [
+    "buildingCodes",
+    "provincesTerritories",
+    "workCodes",
+    "index.*"
+  ],
   "scripts": {
-    "test": "node --test"
+    "coverage": "c8 --reporter=lcov --reporter=text --reporter=text-summary node --test \"test/*.test.js\"",
+    "test": "node --test \"test/*.test.js\"",
+    "test:buildingCodes": "node --test \"test/buildingCodes.test.js\"",
+    "test:provincesTerritories": "node --test \"test/provincesTerritories.test.js\"",
+    "test:workCodes": "node --test \"test/workCodes.test.js\""
   },
   "devDependencies": {
-    "@types/node": "^24.6.1",
-    "eslint-config-cityssm": "^30.0.0",
-    "prettier-config-cityssm": "^1.0.0"
+    "@types/node": "^26.1.2",
+    "eslint-config-cityssm": "^43.0.0",
+    "prettier-config-cityssm": "^2.1.3"
   }
 }

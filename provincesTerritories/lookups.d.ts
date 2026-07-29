@@ -104,5 +104,5 @@ export declare const provincesTerritories: {
         readonly aliases: [];
     };
 };
-export declare const provincesTerritoriesAlphaCodes: string[];
+export declare const provincesTerritoriesAlphaCodes: Array<keyof typeof provincesTerritories>;
 export declare const provincesTerritoriesNames: ("Alberta" | "British Columbia" | "Ontario" | "Quebec" | "Manitoba" | "New Brunswick" | "Newfoundland and Labrador" | "Nova Scotia" | "Northwest Territories" | "Nunavut" | "Prince Edward Island" | "Saskatchewan" | "Yukon")[];

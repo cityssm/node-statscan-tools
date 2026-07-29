@@ -152,7 +152,10 @@ export const provincesTerritories = {
   }
 } as const satisfies Record<string, ProvinceTerritory>
 
-export const provincesTerritoriesAlphaCodes = Object.keys(provincesTerritories)
+// eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion
+export const provincesTerritoriesAlphaCodes = Object.keys(
+  provincesTerritories
+) as Array<keyof typeof provincesTerritories>
 
 export const provincesTerritoriesNames = Object.values(provincesTerritories)
   .map((provinceTerritory) => provinceTerritory.name)

@@ -104,7 +104,7 @@ export const provincesTerritories = {
         aliases: []
     }
 };
-export const provincesTerritoriesAlphaCodes = Object.keys(provincesTerritories).toSorted((a, b) => a.localeCompare(b));
+export const provincesTerritoriesAlphaCodes = Object.keys(provincesTerritories);
 export const provincesTerritoriesNames = Object.values(provincesTerritories)
     .map((provinceTerritory) => provinceTerritory.name)
     .toSorted((a, b) => a.localeCompare(b));

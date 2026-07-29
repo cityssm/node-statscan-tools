@@ -7,8 +7,8 @@ export type Region =
   | 'Territories'
 
 export interface ProvinceTerritory {
-  name: string
   frenchName: string
+  name: string
 
   region: Region
 

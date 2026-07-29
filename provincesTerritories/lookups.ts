@@ -152,9 +152,7 @@ export const provincesTerritories = {
   }
 } as const satisfies Record<string, ProvinceTerritory>
 
-export const provincesTerritoriesAlphaCodes = Object.keys(
-  provincesTerritories
-).toSorted((a, b) => a.localeCompare(b))
+export const provincesTerritoriesAlphaCodes = Object.keys(provincesTerritories)
 
 export const provincesTerritoriesNames = Object.values(provincesTerritories)
   .map((provinceTerritory) => provinceTerritory.name)

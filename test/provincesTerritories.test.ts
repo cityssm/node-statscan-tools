@@ -26,6 +26,19 @@ await describe('statscan-tools/provincesTerritories/lookups', async () => {
       }
     }
   })
+
+  await it('should have sorted alpha codes', () => {
+    const alphaCodes = Object.keys(provincesTerritories.provincesTerritories)
+    const sortedAlphaCodes = alphaCodes.toSorted((a, b) => a.localeCompare(b))
+
+    for (const [index, alphaCode] of alphaCodes.entries()) {
+      if (alphaCode !== sortedAlphaCodes[index]) {
+        throw new Error(
+          `Province/Territory alpha codes are not sorted. Expected ${sortedAlphaCodes[index]} at index ${index}, but found ${alphaCode}`
+        )
+      }
+    }
+  })
 })
 
 await describe('statscan-tools/provincesTerritories/utilities', async () => {

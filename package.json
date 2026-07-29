@@ -22,11 +22,13 @@
   "exports": {
     ".": "./index.js",
     "./buildingCodes": "./buildingCodes/index.js",
+    "./canada": "./canada/index.js",
     "./provincesTerritories": "./provincesTerritories/index.js",
     "./workCodes": "./workCodes/index.js"
   },
   "files": [
     "buildingCodes",
+    "canada",
     "provincesTerritories",
     "workCodes",
     "index.*"
@@ -35,6 +37,7 @@
     "coverage": "c8 --reporter=lcov --reporter=text --reporter=text-summary node --test \"test/*.test.js\"",
     "test": "node --test \"test/*.test.js\"",
     "test:buildingCodes": "node --test \"test/buildingCodes.test.js\"",
+    "test:canada": "node --test \"test/canada.test.js\"",
     "test:provincesTerritories": "node --test \"test/provincesTerritories.test.js\"",
     "test:workCodes": "node --test \"test/workCodes.test.js\""
   },

@@ -4,13 +4,15 @@
 [![DeepSource](https://app.deepsource.com/gh/cityssm/node-statscan-tools.svg/?label=active+issues&show_trend=true&token=SrY1TfBOeltzk6HrjB1-3LBz)](https://app.deepsource.com/gh/cityssm/node-statscan-tools/)
 [![codecov](https://codecov.io/gh/cityssm/node-statscan-tools/graph/badge.svg?token=E9HKQWO2Q1)](https://codecov.io/gh/cityssm/node-statscan-tools)
 
-_Lookups and utilities for working with Statistics Canada (StatsCan) data._
+_Lookups and utilities for working with Statistics Canada (StatsCan),
+and other Canada-related data._
 
 Current lookups:
 
 - Building permit building codes.
 - Building permit work codes.
 - Provinces and territories.
+- Spellings of "Canada".
 
 ## Installation
 

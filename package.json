@@ -1,7 +1,7 @@
 {
   "name": "@cityssm/statscan-tools",
-  "version": "0.3.0",
-  "description": "Lookups and utilities for working with Statistics Canada (StatsCan) data.",
+  "version": "0.4.0",
+  "description": "Lookups and utilities for working with Statistics Canada (StatsCan), and other Canada-related data.",
   "keywords": [
     "statscan",
     "statistics-canada",

@@ -8,7 +8,9 @@ import type { ProvinceTerritory } from './types.js'
  */
 export const provincesTerritories = {
   AB: {
+    frenchName: 'Alberta',
     name: 'Alberta',
+
     region: 'Prairies',
 
     englishAbbreviation: 'Alta.',
@@ -17,16 +19,20 @@ export const provincesTerritories = {
     aliases: []
   },
   BC: {
+    frenchName: 'Colombie-Britannique',
     name: 'British Columbia',
+
     region: 'British Columbia',
 
     englishAbbreviation: 'B.C.',
     frenchAbbreviation: 'C.-B.',
 
-    aliases: ['Colombie-Britannique']
+    aliases: []
   },
   MB: {
+    frenchName: 'Manitoba',
     name: 'Manitoba',
+
     region: 'Prairies',
 
     englishAbbreviation: 'Man.',
@@ -35,43 +41,53 @@ export const provincesTerritories = {
     aliases: []
   },
   NB: {
+    frenchName: 'Nouveau-Brunswick',
     name: 'New Brunswick',
+
     region: 'Atlantic',
 
     englishAbbreviation: 'N.B.',
     frenchAbbreviation: 'N.-B.',
 
-    aliases: ['Nouveau-Brunswick']
+    aliases: []
   },
   NL: {
+    frenchName: 'Terre-Neuve-et-Labrador',
     name: 'Newfoundland and Labrador',
+
     region: 'Atlantic',
 
     englishAbbreviation: 'N.L.',
     frenchAbbreviation: 'T.-N.-L.',
 
-    aliases: ['Newfoundland', 'Labrador', 'Terre-Neuve-et-Labrador', 'Terre-Neuve']
+    aliases: ['Newfoundland', 'Labrador', 'Terre-Neuve']
   },
   NS: {
+    frenchName: 'Nouvelle-Écosse',
     name: 'Nova Scotia',
+
     region: 'Atlantic',
 
     englishAbbreviation: 'N.S.',
     frenchAbbreviation: 'N.-É.',
 
-    aliases: ['Nouvelle-Écosse']
+    aliases: []
   },
   NT: {
+    frenchName: 'Territoires du Nord-Ouest',
     name: 'Northwest Territories',
+
     region: 'Territories',
 
     englishAbbreviation: 'N.W.T.',
     frenchAbbreviation: 'T.N.-O.',
 
-    aliases: ['Territoires du Nord-Ouest']
+    aliases: []
   },
   NU: {
+    frenchName: 'Nunavut',
     name: 'Nunavut',
+
     region: 'Territories',
 
     englishAbbreviation: 'Nun.',
@@ -80,7 +96,9 @@ export const provincesTerritories = {
     aliases: []
   },
   ON: {
+    frenchName: 'Ontario',
     name: 'Ontario',
+
     region: 'Ontario',
 
     englishAbbreviation: 'Ont.',
@@ -89,25 +107,31 @@ export const provincesTerritories = {
     aliases: []
   },
   PE: {
+    frenchName: 'Île-du-Prince-Édouard',
     name: 'Prince Edward Island',
+
     region: 'Atlantic',
 
     englishAbbreviation: 'P.E.I.',
     frenchAbbreviation: 'Î.-P.-É.',
 
-    aliases: ['Île-du-Prince-Édouard']
+    aliases: []
   },
   QC: {
+    frenchName: 'Québec',
     name: 'Quebec',
+
     region: 'Quebec',
 
     englishAbbreviation: 'Que.',
     frenchAbbreviation: 'Qc',
 
-    aliases: ['Québec']
+    aliases: []
   },
   SK: {
+    frenchName: 'Saskatchewan',
     name: 'Saskatchewan',
+
     region: 'Prairies',
 
     englishAbbreviation: 'Sask.',
@@ -116,7 +140,9 @@ export const provincesTerritories = {
     aliases: []
   },
   YT: {
+    frenchName: 'Yukon',
     name: 'Yukon',
+
     region: 'Territories',
 
     englishAbbreviation: 'Y.T.',

@@ -26,6 +26,7 @@ export function findProvinceTerritory(
     if (
       alphaCode.toLowerCase() === searchString ||
       data.name.toLowerCase() === searchString ||
+      data.frenchName.toLowerCase() === searchString ||
       data.englishAbbreviation.toLowerCase() === searchString ||
       data.frenchAbbreviation.toLowerCase() === searchString ||
       data.aliases.some((alias) => alias.toLowerCase() === searchString)

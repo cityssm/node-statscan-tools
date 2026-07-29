@@ -6,7 +6,8 @@ await describe('statscan-tools/provincesTerritories/lookups', async () => {
             if (!/^[A-Z]{2}$/v.test(alphaCode)) {
                 throw new Error(`Province/Territory alpha code ${alphaCode} is not two capital letters`);
             }
-            if (provinceTerritory.aliases.some((alias) => alias.toLowerCase() === provinceTerritory.name.toLowerCase())) {
+            if (provinceTerritory.aliases.some((alias) => alias.toLowerCase() === provinceTerritory.name.toLowerCase() ||
+                alias.toLowerCase() === provinceTerritory.frenchName.toLowerCase())) {
                 throw new Error(`Province/Territory ${provinceTerritory.name} has an unnecessary alias that matches its name`);
             }
         }

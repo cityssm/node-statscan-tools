@@ -16,7 +16,8 @@ await describe('statscan-tools/provincesTerritories/lookups', async () => {
       if (
         provinceTerritory.aliases.some(
           (alias: string) =>
-            alias.toLowerCase() === provinceTerritory.name.toLowerCase()
+            alias.toLowerCase() === provinceTerritory.name.toLowerCase() ||
+            alias.toLowerCase() === provinceTerritory.frenchName.toLowerCase()
         )
       ) {
         throw new Error(

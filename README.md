@@ -1,5 +1,7 @@
 # Statistics Canada (StatsCan) Tools for Node
 
+[![codecov](https://codecov.io/gh/cityssm/node-statscan-tools/graph/badge.svg?token=E9HKQWO2Q1)](https://codecov.io/gh/cityssm/node-statscan-tools)
+
 _Lookups and utilities for working with Statistics Canada (StatsCan) data._
 
 Current lookups:
